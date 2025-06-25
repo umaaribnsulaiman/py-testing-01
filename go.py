@@ -69,11 +69,19 @@ import math
 # else:
 #     print("It's a nice day, let's play outdoor!")
 
-name='''UMAR IBN SULEIMAN'''
-if len(name)<3:
-     print("Name must be at least 3 characters long")
-elif len(name)>50:
-    print("Name can be a maximum of 50 characters long")
-else:
-    print("Name looks good")
-    
+# name='''UMAR IBN SULEIMAN'''
+# print(len(name))
+# if len(name)<3:
+#      print("Name must be at least 3 characters long")
+# elif len(name)>50:
+#     print("Name can be a maximum of 50 characters long")
+# else:
+#     print("Name looks good")
+
+weight = input('what is your weight? ')# Example weight in kg
+kg_or_lb= input('''Is your weight in kg or lb?
+                kg(k) or pound(l) ''')  # Example unit
+if kg_or_lb.lower()=='k':
+    print(f'Your weight in popund is {weight*2.20462}lb')
+elif kg_or_lb.lower()=='l':
+    print(f'Your weight in kg is {weight/2.20462}kg')
